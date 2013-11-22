@@ -12,7 +12,14 @@ This module is a simple wrapper around ogr2ogr that takes a geojson file and out
 ```javascript
 var geojson2kml = require('geojson2kml')
 
-geojson2kml('./polygons.geojson', './polygons.kml', function(err){
+geojson2kml('/path/to/polygons.geojson', '/path/to/polygons.kml', function(err){
   if(err) throw err
 })
+```
+
+**Test**
+
+```bash
+cd test
+mocha .
 ```
